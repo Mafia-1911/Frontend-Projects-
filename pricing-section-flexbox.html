@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Project</title>
+</head>
+<style>
+.pricing{
+    display: flex;
+    justify-content:center;
+    gap: 15px;
+    flex-wrap:nowrap;
+}
+.basic,.standard,.premium{
+    background-color: rgb(224, 223, 223);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:350px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+
+
+.sign-up{
+    color: white;
+    background-color: tomato;
+    border-radius:5px;
+    height: 30px;
+    width: 75px;
+    margin-top: 10px;
+    margin-bottom:25px;
+    font:bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.rate{
+   font-size: 50px;
+   margin: 0;
+   padding: 0;
+
+}
+p{
+    margin: 10px;
+    padding: 0;
+}
+@media screen and (max-width:1097px){
+    .pricing{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+</style>
+<body>
+    <div class="pricing">
+        <div class="basic">
+            <h3 class="title">Basic</h3>
+            <h1 class="rate">$11.99/ Month</h1>
+            <p>☑️ 10GB Storage</p>
+            <p>☑️ 1 user </p>
+            <p>☑️ Support </p>
+            <button class="sign-up">Sign Up</button>
+        </div>
+        <div class="standard">
+            <h3 >Standard</h3>
+            <h1 class="rate">$11.99/ Month</h1>
+            <p>☑️ 10GB Storage</p>
+            <p>☑️ 5 user </p>
+            <p>☑️ Phone and call Support </p>
+            <button class="sign-up">Sign Up</button>
+        </div>
+        <div class="premium">
+            <h3>Premium</h3>
+            <h1 class="rate">$11.99/ Month</h1>
+            <p>☑️ 100 GB Storage</p>
+            <p>☑️ 10 Users </p>
+            <p>☑️ 24/7 Support </p>
+            <button class="sign-up" onclick="{console.log()}">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
